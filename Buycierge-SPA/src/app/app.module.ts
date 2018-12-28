@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
 import { HttpClientModule } from '@angular/common/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
 @NgModule({
    declarations: [
@@ -13,8 +15,11 @@ import { HttpClientModule } from '@angular/common/http';
    ],
    imports: [
       BrowserModule,
+      BrowserAnimationsModule,
       AppRoutingModule,
-      HttpClientModule
+      HttpClientModule,
+      MatButtonModule,
+      MatCheckboxModule
    ],
    providers: [],
    bootstrap: [
